@@ -1,0 +1,177 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "sharepointdocuments",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "sharepointdocument",
+    "Name": "Documents",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "_regardingobjectid_value": "Regarding",
+      "{Attachments}": "Attachments",
+      "absoluteurl": "Absolute URL",
+      "appcreatedby": "Application Created by",
+      "appmodifiedby": "Application Modified By",
+      "author": "Author",
+      "businessunitid": "Business Unit",
+      "checkedoutto": "Checked Out To",
+      "checkincomment": "Check In Comment",
+      "childfoldercount": "Folder Child Count",
+      "childitemcount": "Child Item Count",
+      "contenttype": "Content Type",
+      "contenttypeid": "Content Type ID",
+      "copysource": "Copy Source",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "documentid": "Document ID",
+      "documentlocationtype": "Document Location Type",
+      "edit": "Edit Url Sharepoint Form",
+      "editurl": "Edit Web App URL",
+      "exchangerate": "Exchange Rate",
+      "filesize": "File Size",
+      "filetype": "File Type",
+      "fullname": "Name",
+      "iconclassname": "Icon ClassName",
+      "ischeckedout": "Is Checked out",
+      "isfolder": "Is Folder",
+      "isrecursivefetch": "Is Recursive Fetch",
+      "locationid": "SharePoint Document Location",
+      "locationname": "Location",
+      "modified": "Modified",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "organizationid": "Organization",
+      "owningbusinessunit": "Owning Business Unit",
+      "readurl": "Read WebApp URL",
+      "relativelocation": "Path",
+      "servicetype": "Source",
+      "sharepointcreatedon": "Created On SharePoint",
+      "SharePointDocument_Annotation": "Notes",
+      "sharepointdocumentid": "SharePoint Document",
+      "sharepointmodifiedby": "Modified by",
+      "title": "Title",
+      "transactioncurrencyid": "Currency",
+      "version": "SharePoint Document Version"
+    },
+    "PreferredName": "Documents",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Documents (Views)",
+    "Name": "_sharepointdocument_views",
+    "RelatedEntityName": "Documents",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "0016f9f3-41cc-4276-9d11-04308d15858d": "Document Associated Grid",
+      "a5b008ac-07d9-4554-8509-2c05767bff51": "All SharePoint Document",
+      "f5b008ac-07d9-4554-8509-2c05767bff5f": "SharePoint Document Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "Is Checked out (Documents)",
+    "Name": "sharepointdocument_ischeckout",
+    "OptionSetInfoNameMapping": {
+      "0": "Checked Out (0)",
+      "1": "Checked Out (1)"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ischeckedout",
+        "OptionSetReferenceEntityName": "Documents"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "ischeckedout",
+    "RelatedEntityName": "Documents",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Is Folder (Documents)",
+    "Name": "sharepointdocument_isfolder",
+    "OptionSetInfoNameMapping": {
+      "0": "is Folder (0)",
+      "1": "is Folder (1)"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "isfolder",
+        "OptionSetReferenceEntityName": "Documents"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "isfolder",
+    "RelatedEntityName": "Documents",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Is Recursive Fetch (Documents)",
+    "Name": "sharepointdocument_isrecursivefetch",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "isrecursivefetch",
+        "OptionSetReferenceEntityName": "Documents"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "isrecursivefetch",
+    "RelatedEntityName": "Documents",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Location Type",
+    "Name": "sharepointdocumentlocation_locationtype",
+    "OptionSetInfoNameMapping": {
+      "0": "General",
+      "1": "Dedicated for OneNote Integration"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "documentlocationtype",
+        "OptionSetReferenceEntityName": "Documents"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "documentlocationtype",
+    "RelatedEntityName": "Documents",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "ServiceType",
+    "Name": "sharepointsite_servicetype",
+    "OptionSetInfoNameMapping": {
+      "0": "SharePoint",
+      "1": "OneDrive",
+      "2": "Shared with me",
+      "3": "MS Teams"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "servicetype",
+        "OptionSetReferenceEntityName": "Documents"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "servicetype",
+    "RelatedEntityName": "Documents",
+    "Type": "OptionSetInfo"
+  }
+]
